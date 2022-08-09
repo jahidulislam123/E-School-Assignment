@@ -10,6 +10,7 @@ const Cards = () => {
     
     const [takeSearch, setTakeSearch]=useState([]);
     console.log(takeSearch);
+    
 
     useEffect(()=>{
         fetch(`https://openapi.programming-hero.com/api/phones?search=${takeSearch}`)
@@ -29,12 +30,14 @@ const Cards = () => {
     return (
         <div >
             
-            <div className='total-container'>
+            <div className='total-container '>
             <form   onSubmit={handleSearch}>
-                <input ref={searchRef} type="text" placeholder='       Samsung , IPhone, Huawei.............' />
+                <input className='text-center' ref={searchRef} type="text" placeholder='       Samsung , IPhone, Huawei.............' />
                 <button className='button-design' type='submit'>Search</button>
             </form>
+            
             </div>
+            <h3 >Please serch by samsung , iphone ,huawei</h3>
 
           <div className='flex items-center justify-center min-h-screen container mx-auto'>
           <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>

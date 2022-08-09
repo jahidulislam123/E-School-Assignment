@@ -19,14 +19,15 @@ const SingleCart = ({phone}) => {
     
 
         <div >
-             <div className='card  rounded text-left p-8 '>
+             
+            <div className='card'>
+            <div className='card  rounded text-left p-8 '>
                 <h2>{singlephoneDetails.name}</h2>
                 <h2>{singlephoneDetails.brand}</h2>
                 <h2>{singlephoneDetails.releaseDate}</h2>
                 
-                {/* <h2>{singlephoneDetails.mainFeatures.displaySize}</h2> */}
+             
              </div>
-            <div className='card'>
             <div className='p-5 flex flex-col'>
                 <div className='rounded-xl overflow-hidden '>
                     <img src={image} alt="" />
